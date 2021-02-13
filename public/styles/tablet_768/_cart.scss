@@ -1,0 +1,37 @@
+  .cart-container {
+    flex-direction: column;
+    margin-top: 59px;
+    margin-bottom: 147px;
+  }
+
+  .cart-left {
+    width: 100%;
+  }
+
+  .cart-product-descr {
+    width: 100%;
+  }
+
+  .cart-controls {
+    margin-top: 62px;
+    justify-content: space-evenly;
+  }
+
+  .cart-right {
+    margin-left: 0;
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .cart-form {
+    flex-basis: 360px;
+    flex-grow: 1;
+  }
+
+  .cart-summary {
+    flex-basis: 360px;
+    flex-grow: 1;
+  }
+

@@ -1,0 +1,136 @@
+.filter {
+  margin-top: 51px;
+  display: flex;
+  text-transform: uppercase;
+  position: relative;
+
+  &-main {
+    text-transform: uppercase;
+    position: absolute;
+    padding: 13px 16px;
+
+    &-items {
+      display: none;
+    }
+
+    &-active {
+     &:hover {
+       width: 360px;
+       background: #FFFFFF;
+       box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+       position: absolute;
+       z-index: 1;
+       padding: 13px 16px;
+     }
+
+     &:hover .filter-main-text {
+       color: #EF5B70;
+     }
+
+     &:hover  path {
+       fill: #EF5B70;
+     }
+
+     &:hover .filter-main-items {
+       display: block;
+     }
+
+   }
+
+    &-item {
+      margin-top: 16px;
+
+      &-summary {
+        height: 37px;
+        display: flex;
+        border-bottom: 1px solid #EBEBEB;
+        list-style: none;
+
+        &::-webkit-details-marker {
+          display: none
+        }
+
+        &-rectangle {
+          background: #EF5B70;
+          width: 5px;
+        }
+
+        &-text {
+          margin-left: 11px;
+          margin-top: 8px;
+          font-size: 14px;
+          line-height: 17px;
+          color: #EF5B70;
+        }
+      }
+    }
+
+    &-ul {
+      list-style-type: none;
+      padding-left: 17px;
+      margin-top: 24px;
+    }
+
+    &-li {
+      margin-top: 11px;
+    }
+
+    &-a {
+      text-transform: none;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+    }
+  }
+}
+
+.products {
+  margin-top: 67px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.paginator {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+
+  &-ul {
+    list-style: none;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &-li {
+    display: inline;
+    margin-right: 18px;
+
+    &:first-child:before {
+      content: '\f104';
+      font-family: FontAwesome;
+      margin-right: 18px;
+    }
+
+    &:last-child:after {
+      content: '\f105';
+      font-family: FontAwesome;
+      margin-left: 18px;
+    }
+  }
+
+  &-a {
+    &:hover {
+      font-weight: bolder;
+      color: #222222;
+    }
+  }
+}
+
+.active {
+  color: #EF5B70;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="https://kit.fontawesome.com/d9425ebea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header center">
+		<div class="header_left">
+			<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+			<a href="#"><img class="header_search" src="img/search.svg" alt="search"></a>
+		</div>
+		<div class="header_right">
+			<input type="checkbox" id="switcher">
+			<label for="switcher">
+				<img alt="menu" src="img/menu.svg">
+			</label>
+			<nav class="drop">
+				<h2 class="drop__name">Menu</h2>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">MAN</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Bags</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Denim</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">WOMAN</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Jackets & Coats</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Polos</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">KIDS</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Jackets & Coats</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Polos</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Bags</a></li>
+					</ul>
+				</div>
+			</nav>
+			<a href="registration.html"><img alt="account" class="header_account" src="img/account.svg"></a>
+			<a class="header_cart" href="cart.html"><img alt="cart" src="img/cart.svg"></a>
+		</div>
+	</header>
+	<div class="title">
+		<div class="title-content center">
+			<div class="title-text brand-color">
+				SHOPPING CART
+			</div>
+		</div>
+	</div>
+
+	<section class="cart-container center">
+		<div class="cart-left">
+			<div class="cart-product">
+				<img src="img/cart-product1.png" alt="cart-product" class="image">
+				<div class="cart-product-descr">
+					<div class="cart-product-close">
+						<i class="fas fa-times"></i>
+					</div>
+					<h3 class="cart-product-header">
+						<a href="product.html" class="cart-product-header-a">MANGO  PEOPLE  T-SHIRT</a>
+					</h3>
+					<p class="cart-product-text">
+						Price: <span class="brand-color">$300</span>
+					</p>
+					<p class="cart-product-text">Color: Red</p>
+					<p class="cart-product-text">Size: Xl</p>
+					<div class="cart-product-quantity">
+						<p class="cart-product-text">Quantity:	</p>
+						<input type="number" required placeholder="1" value="2" class="quantity" min="1" max="5">
+					</div>
+				</div>
+			</div>
+			<div class="cart-product">
+				<img src="img/cart-product2.png" alt="cart-product" class="image">
+				<div class="cart-product-descr">
+					<div class="cart-product-close">
+						<i class="fas fa-times"></i>
+					</div>
+					<h3 class="cart-product-header">
+						<a href="product.html" class="cart-product-header-a">MANGO  PEOPLE  T-SHIRT</a>
+					</h3>
+					<p class="cart-product-text">
+						Price: <span class="brand-color">$300</span>
+					</p>
+					<p class="cart-product-text">Color: Red</p>
+					<p class="cart-product-text">Size: Xl</p>
+					<div class="cart-product-quantity">
+						<p class="cart-product-text">Quantity:	</p>
+						<input type="number" required placeholder="1" value="2" class="quantity" min="1" max="5">
+					</div>
+				</div>
+			</div>
+			<div class="cart-controls">
+				<a href="cart.html" class="cart-controls-button">
+					Clear shopping cart
+				</a>
+				<a href="catalog.html" class="cart-controls-button">
+					Continue shopping
+				</a>
+			</div>
+		</div>
+		<div class="cart-right">
+			<div class="cart-form">
+				<form>
+					<h3 class="cart-form-header">
+						SHIPPING ADRESS
+					</h3>
+					<input type="text" required placeholder="Country" class="cart-form-input">
+					<input type="text" required placeholder="State" class="cart-form-input">
+					<input type="text" required placeholder="Postcode / Zip" class="cart-form-input">
+					<button type="submit" class="cart-form-button">GET A QUOTE</button>
+				</form>
+			</div>
+			<div class="cart-summary">
+				<p class="cart-summary-sub-text">
+					SUB TOTAL <span class="total-value">$900</span>
+				</p>
+				<p class="cart-summary-grand-text">
+					GRAND TOTAL <span class="brand-color total-value">$900</span>
+				</p>
+				<hr class="cart-summary-line">
+				<a href="#" class="cart-summary-button">
+					PROCEED TO CHECKOUT
+				</a>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="footer-middle center">
+			<div class="footer-middle-item">
+				<img src="img/photo.png" alt="photo">
+				<p class="footer-middle-p" >“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+			</div>
+			<div class="footer-middle-item">
+				<h3 class="footer-middle-h3">
+					SUBSCRIBE
+				</h3>
+				<p class="footer-middle-form-p">FOR OUR NEWLETTER AND PROMOTION</p>
+				<form class="footer-middle-form">
+					<input type="email" class="form-input" placeholder="Enter Your Email" required>
+					<button type="submit" class="form-button">Subscribe</button>
+				</form>
+
+			</div>
+		</div>
+		<div class="footer-bottom center">
+			<p class="footer-bottom-p">
+				© 2021  Brand  All Rights Reserved.
+			</p>
+			<div class="footer-bottom-social-logos">
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-pinterest-p"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

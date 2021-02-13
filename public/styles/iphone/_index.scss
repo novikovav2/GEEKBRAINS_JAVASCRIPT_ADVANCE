@@ -1,0 +1,49 @@
+.promo {
+    &_left {
+      display: none;
+    }
+
+    &_right {
+      width: 100%;
+      height: 363px;
+      padding-left: 54px;
+    }
+
+    &-heading {
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+    &-text {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+.catalog {
+    padding-top: 64px;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    &_item:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &_item_big {
+      margin-top: 32px;
+    }
+
+    &_img_big {
+      height: 111px;
+    }
+  }
+
+.feature {
+    margin-top: 64px;
+  }
+
+.products-index {
+    margin-top: 64px;
+  }
