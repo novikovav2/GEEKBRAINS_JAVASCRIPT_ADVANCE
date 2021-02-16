@@ -1,11 +1,12 @@
 {
-  "name": "javascript_advanced",
+  "name": "javascript-advanced",
   "version": "1.0.0",
-  "description": "",
+  "description": "My homework on Geekbrains portal",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Aleksandr Novikov",
   "license": "ISC"
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="https://kit.fontawesome.com/d9425ebea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header center">
+		<div class="header_left">
+			<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+			<a href="#"><img class="header_search" src="img/search.svg" alt="search"></a>
+		</div>
+		<div class="header_right">
+			<input type="checkbox" id="switcher">
+			<label for="switcher">
+				<img alt="menu" src="img/menu.svg">
+			</label>
+			<nav class="drop">
+				<h2 class="drop__name">Menu</h2>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">MAN</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Bags</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Denim</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">WOMAN</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Jackets & Coats</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Polos</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">KIDS</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Jackets & Coats</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Polos</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Bags</a></li>
+					</ul>
+				</div>
+			</nav>
+			<a href="registration.html"><img alt="account" class="header_account" src="img/account.svg"></a>
+			<a class="header_cart" href="cart.html"><img alt="cart" src="img/cart.svg"></a>
+		</div>
+	</header>
+	<div class="title">
+		<div class="title-content center">
+			<div class="title-text brand-color">
+				REGISTRATION
+			</div>
+		</div>
+	</div>
+
+
+	<section class="registration-content center">
+		<div class="registration-left">
+			<form>
+				<h3 class="registration-header">Your Name</h3>
+				<input type="text" required placeholder="First Name" class="registration-input">
+				<input type="text" required placeholder="Last Name" class="registration-input">
+				<div class="registration-radio-group">
+					<input type="radio" value="Male" id="male" class="registration-radio-input" name="sex">
+					<label for="male" class="registration-radio-label">Male</label>
+					<input type="radio" value="Female" id="female" class="registration-radio-input" name="sex">
+					<label for="female" class="registration-radio-label">Female</label>
+				</div>
+				<h3 class="registration-header">Login details</h3>
+				<input type="email" required placeholder="Email" class="registration-input">
+				<input type="password" required placeholder="Password" class="registration-input">
+				<p class="registration-p">
+					Please use 8 or more characters, with at least 1 number and a mixture of
+					uppercase and lowercase letters
+				</p>
+				<button type="submit" class="registration-button">
+					JOIN NOW <i class="fas fa-long-arrow-alt-right"></i>
+				</button>
+			</form>
+		</div>
+		<div class="registration-right">
+			<h3 class="registration-right-header">LOYALTY HAS ITS PERKS</h3>
+			<p class="registration-right-p">
+				Get in on the loyalty program where you can earn points and unlock serious perks.
+				Starting with these as soon as you join:
+			</p>
+			<ul class="registration-right-ul fa-ul">
+				<li class="li"><span class="fa-li"><i class="fas fa-check"></i></span>15% off welcome offer</li>
+				<li class="li"><span class="fa-li"><i class="fas fa-check"></i></span>Free shipping, returns and exchanges on all orders</li>
+				<li class="li"><span class="fa-li"><i class="fas fa-check"></i></span>$10 off a purchase on your birthday</li>
+				<li class="li"><span class="fa-li"><i class="fas fa-check"></i></span>Early access to products</li>
+				<li class="li"><span class="fa-li"><i class="fas fa-check"></i></span>Exclusive offers & rewards</li>
+			</ul>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-middle center">
+			<div class="footer-middle-item">
+				<img src="img/photo.png" alt="photo">
+				<p class="footer-middle-p" >“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+			</div>
+			<div class="footer-middle-item">
+				<h3 class="footer-middle-h3">
+					SUBSCRIBE
+				</h3>
+				<p class="footer-middle-form-p">FOR OUR NEWLETTER AND PROMOTION</p>
+				<form class="footer-middle-form">
+					<input type="email" class="form-input" placeholder="Enter Your Email" required>
+					<button type="submit" class="form-button">Subscribe</button>
+				</form>
+
+			</div>
+		</div>
+		<div class="footer-bottom center">
+			<p class="footer-bottom-p">
+				© 2021  Brand  All Rights Reserved.
+			</p>
+			<div class="footer-bottom-social-logos">
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-pinterest-p"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

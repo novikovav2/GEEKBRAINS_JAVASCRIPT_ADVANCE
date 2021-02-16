@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="https://kit.fontawesome.com/d9425ebea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header center">
+		<div class="header_left">
+			<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+			<a href="#"><img class="header_search" src="img/search.svg" alt="search"></a>
+		</div>
+		<div class="header_right">
+			<input type="checkbox" id="switcher">
+			<label for="switcher">
+				<img alt="menu" src="img/menu.svg">
+			</label>
+			<nav class="drop">
+				<h2 class="drop__name">Menu</h2>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">MAN</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Bags</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Denim</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">WOMAN</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Jackets & Coats</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Polos</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__item">
+					<a href="catalog.html" class="drop__heading">KIDS</a>
+					<ul class="drop__ul">
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Accessories</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Jackets & Coats</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Polos</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">T-Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Shirts</a></li>
+						<li class="drop__li"><a class="drop__link" href="catalog.html">Bags</a></li>
+					</ul>
+				</div>
+			</nav>
+			<a href="registration.html"><img alt="account" class="header_account" src="img/account.svg"></a>
+			<a class="header_cart" href="cart.html"><img alt="cart" src="img/cart.svg"></a>
+		</div>
+	</header>
+	<div class="title">
+		<div class="title-content center">
+			<div class="title-text brand-color">
+				NEW ARRIVALS
+			</div>
+			<nav>
+				<ul class="breadcrumbs">
+					<li><a href="index.html" class="breadcrumbs-a">Home</a></li>
+					<li><a href="#" class="breadcrumbs-a">Men</a></li>
+					<li class="brand-color">New arrivals</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+	<div class="product-image">
+			<div class="product-image-arrow">
+				<a href="#" class="arrow-link">
+					<i class="fas fa-angle-left fa-2x"></i>
+				</a>
+			</div>
+			<img src="img/product-main.png" alt="product-image" class="product-image-img">
+			<div class="product-image-arrow">
+				<a href="#" class="arrow-link">
+					<i class="fas fa-angle-right fa-2x"></i>
+				</a>
+			</div>
+		</div>
+
+	<section class="description-container center">
+		<div class="product-description ">
+			<h2 class="collection brand-color">
+				WOMEN COLLECTION
+			</h2>
+			<div class="product-line-color">
+			</div>
+			<h3 class="product-name">
+				MOSCHINO CHEAP AND CHIC
+			</h3>
+			<p class="product-text">
+				Compellingly actualize fully researched processes before proactive outsourcing.
+				Progressively syndicate collaborative architectures before cutting-edge services.
+				Completely visualize parallel core competencies rather than exceptional portals.
+			</p>
+			<p class="price">
+				$561
+			</p>
+			<div class="product-line"></div>
+			<div class="product-filter-detail">
+				<details class="filter-detail-item">
+					<summary class="filter-detail-item-summary">
+						<div class="filter-detail-item-summary-text">
+							CHOOSE COLOR
+						</div>
+						<i class="fas fa-chevron-down"></i>
+					</summary>
+				</details>
+				<details class="filter-detail-item">
+					<summary class="filter-detail-item-summary">
+						<div class="filter-detail-item-summary-text">
+							CHOOSE SIZE
+						</div>
+						<i class="fas fa-chevron-down"></i>
+					</summary>
+					<div class="size">
+						<div class="filter-detail-item-size">
+							<input type="checkbox" value="XS" id="size_xs">
+							<label for="size_xs" class="filter-detail-item-label">XS</label>
+						</div>
+						<div class="filter-detail-item-size">
+							<input type="checkbox" value="S" id="size_s">
+							<label for="size_s" class="filter-detail-item-label">S</label>
+						</div>
+						<div class="filter-detail-item-size">
+							<input type="checkbox" value="XS" id="size_m">
+							<label for="size_m" class="filter-detail-item-label">M</label>
+						</div>
+						<div class="filter-detail-item-size">
+							<input type="checkbox" value="XS" id="size_l">
+							<label for="size_l" class="filter-detail-item-label">L</label>
+						</div>
+					</div>
+				</details>
+				<details class="filter-detail-item">
+					<summary class="filter-detail-item-summary">
+						<div class="filter-detail-item-summary-text">
+							QUANTITY
+						</div>
+						<i class="fas fa-chevron-down"></i>
+					</summary>
+				</details>
+			</div>
+			<a href="cart.html" class="add-to-cart">
+				<div class="cart-img">
+					<i class="fas fa-shopping-cart fa-2x"></i>
+				</div>
+				Add to Cart
+			</a>
+		</div>
+	</section>
+
+
+		<div class="products center">
+			<div class="product">
+				<a href="#">
+					<img src="img/product1.png" alt="product" class="product-img">
+				</a>
+				<a href="#" class="product-add">
+					<img src="img/cart.svg" alt="product add to cart">
+					Add to Cart
+				</a>
+				<a href="#" class="product-title">
+					ELLERY X M'O CAPSULE
+				</a>
+				<p class="product-descr">
+					Known for her sculptural takes on traditional tailoring,
+					Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+				</p>
+				<p class="product-price">
+					$52.00
+				</p>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/product2.png" alt="product" class="product-img">
+				</a>
+				<a href="#" class="product-add">
+					<img src="img/cart.svg" alt="product add to cart">
+					Add to Cart
+				</a>
+				<a href="#" class="product-title">
+					ELLERY X M'O CAPSULE
+				</a>
+				<p class="product-descr">
+					Known for her sculptural takes on traditional tailoring,
+					Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+				</p>
+				<p class="product-price">
+					$52.00
+				</p>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/product3.png" alt="product" class="product-img">
+				</a>
+				<a href="#" class="product-add">
+					<img src="img/cart.svg" alt="product add to cart">
+					Add to Cart
+				</a>
+				<a href="#" class="product-title">
+					ELLERY X M'O CAPSULE
+				</a>
+				<p class="product-descr">
+					Known for her sculptural takes on traditional tailoring,
+					Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+				</p>
+				<p class="product-price">
+					$52.00
+				</p>
+			</div>
+
+		</div>
+
+
+	<footer class="footer">
+		<div class="footer-middle center">
+			<div class="footer-middle-item">
+				<img src="img/photo.png" alt="photo">
+				<p class="footer-middle-p" >“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+			</div>
+			<div class="footer-middle-item">
+				<h3 class="footer-middle-h3">
+					SUBSCRIBE
+				</h3>
+				<p class="footer-middle-form-p">FOR OUR NEWLETTER AND PROMOTION</p>
+				<form class="footer-middle-form">
+					<input type="email" class="form-input" placeholder="Enter Your Email" required>
+					<button type="submit" class="form-button">Subscribe</button>
+				</form>
+
+			</div>
+		</div>
+		<div class="footer-bottom center">
+			<p class="footer-bottom-p">
+				© 2021  Brand  All Rights Reserved.
+			</p>
+			<div class="footer-bottom-social-logos">
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-pinterest-p"></i>
+				</a>
+				<a href="#" class="social-logo-fa">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
