@@ -1,0 +1,8 @@
+{
+  "data":
+  [
+    { "id": "000007", "name": "Product 7", "price": 70, "img": "/img/product7.png" },
+    { "id": "000008", "name": "Product 8", "price": 80, "img": "/img/product8.png" },
+    { "id": "000009", "name": "Product 9", "price": 90, "img": "/img/product9.png" }
+  ]
+}
