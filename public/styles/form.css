@@ -1,0 +1,8 @@
+.validate_warning {
+    color: darkred;
+    display: none;
+}
+
+.active {
+    display: block;
+}
