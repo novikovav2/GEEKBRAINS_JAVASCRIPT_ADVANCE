@@ -1,0 +1,18 @@
+$cartColor: #F1E4E6;
+$catalogColor: #EBEBEB;
+
+.cart {
+    background-color: $cartColor;
+}
+
+.catalog {
+    background-color: $catalogColor;
+}
+
+.catalog_img {
+    height: 250px;
+}
+
+.cart_img {
+    height: 50px;
+}
