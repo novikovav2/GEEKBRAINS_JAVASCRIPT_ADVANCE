@@ -1,4 +1,6 @@
-class Catalog {
+import Product from './product';
+
+export default class Catalog {
     _products = []; // массив объектов класса Product
     _placeForRender = '';
     _cart = null;

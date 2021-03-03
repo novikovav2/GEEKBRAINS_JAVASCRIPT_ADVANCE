@@ -1,4 +1,4 @@
-class Product {
+export default class Product {
     _id = '';
     _name = 'Product 1';
     _price = 0;

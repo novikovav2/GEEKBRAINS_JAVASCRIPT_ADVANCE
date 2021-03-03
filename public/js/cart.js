@@ -1,4 +1,4 @@
-class Cart {
+export default class Cart {
      _products = [];  // Массив объектов вида {"product": Product, "count": 0}
      _placeForRender = ''
 

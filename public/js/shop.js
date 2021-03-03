@@ -1,4 +1,7 @@
-class Shop {
+import Cart from './cart.js';
+import Catalog from './catalog';
+
+export default class Shop {
     _cart = '';
     _catalog = '';
 
@@ -15,8 +18,5 @@ class Shop {
         this._catalog = new Catalog(catalogElement, this._cart);
     }
 }
-
-const shopElement = document.querySelector('.shop')
-const shop = new Shop(shopElement);
 
 
