@@ -1,5 +1,11 @@
-import Shop from './shop.js';
-import "../shop.scss";
+import Vue from 'vue';
+import App from "../../src/App.vue";
 
-const shopElement = document.querySelector('.shop')
-const shop = new Shop(shopElement);
+new Vue({
+    el: '.shop',
+    template: '<App />',
+    components: {
+        App
+    }
+});
+

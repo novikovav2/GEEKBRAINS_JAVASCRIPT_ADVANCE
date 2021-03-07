@@ -33,14 +33,10 @@ export default class Cart {
     }
 
     addProduct(product) {
-        let exist = false;
-        for (let i=0; i < this._products.length; i++) {
-            if (this._products[i].product === product) {
-                this._products[i].count++;
-                exist = true
-            }
-        }
-        if (!exist) {
+         const existItem = this._products.find(item => item.product === product);
+        if (existItem) {
+            existItem.count++
+        } else {
             this._products.push({
                 "product": product,
                 "count": 1
