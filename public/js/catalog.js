@@ -5,6 +5,7 @@ export default class Catalog {
     _placeForRender = '';
     _cart = null;
     _numData = 1;
+    _canLoadMoreData = true;
 
     constructor(placeForRender, cart) {
         this._placeForRender = placeForRender;
@@ -28,7 +29,7 @@ export default class Catalog {
             this._placeForRender.appendChild(productElement);
         });
 
-        if (this._numData < 3) {
+        if (this._canLoadMoreData) {
             this._placeForRender.insertAdjacentHTML('beforeend',
                 "<button id=\"loadData\">Load more data</button>");
             this.addListenerLoadData();
@@ -50,6 +51,11 @@ export default class Catalog {
                     return new Product(item);
                 });
                 this._products = this._products.concat(fetchProducts);
+                this.render();
+            })
+            .catch((error) => {
+                console.log(error);
+                this._canLoadMoreData = false;
                 this.render();
             });
     }
@@ -76,10 +82,6 @@ export default class Catalog {
     }
 
     findProductById(id, products) {
-        for (let i=0; i< products.length; i++) {
-            if (products[i].getId() === id) {
-                return products[i];
-            }
-        }
+        return  products.find(item => item.getId() === id);
     }
 }
