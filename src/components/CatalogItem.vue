@@ -6,21 +6,30 @@
     <img :src="product.img" :class="[$style.image]">
     <div>
       Price: {{ product.price }}
-      <button>Add to cart </button>
+      <button @click="addToCart(id)">Add to cart </button>
     </div>
 
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
 
 export default {
   props: {
-    product: Object
+    id: String
   },
   methods: {
-    addToCart() {
-      console.log("Add to cart product:" + this.product);
+    ...mapActions([
+        'addToCart'
+    ])
+  },
+  computed: {
+    ...mapGetters([
+        'getProduct'
+    ]),
+    product: function () {
+      return this.getProduct(this.id);
     }
   }
 }

@@ -1,37 +1,43 @@
 <template>
   <div>
     <div :class="[$style.name]">
-      {{ cartItem.product.name }}
+      {{ product.name }}
     </div>
-    <img :src="cartItem.product.img" :class="[$style.image]">
+    <img :src="product.img" :class="[$style.image]">
     <div>
-      Price: {{ cartItem.product.price }}
-    </div>
-    <div>
-      Count: {{ cartItem.count }}
+      Price: {{ product.price }}
     </div>
     <div>
-      <button @click="countDown">-</button>
-      <button @click="countUp">+</button>
-      <button @click="removeItem">Remove</button>
+      Count: {{ count }}
+    </div>
+    <div>
+      <button @click="reduceInCart(id)">-</button>
+      <button @click="addToCart(id)">+</button>
+      <button @click="removeFromCart(id)">Remove</button>
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
 export default {
   props: {
-    cartItem: Object
+    id: String,
+    count: Number
   },
   methods: {
-    countDown() {
-      this.$emit('countDown', { cartItem: this.cartItem })
-    },
-    countUp() {
-      this.$emit('countUp', { cartItem: this.cartItem })
-    },
-    removeItem() {
-      this.$emit('removeItem', { cartItem: this.cartItem })
+    ...mapActions([
+        'addToCart',
+        'removeFromCart',
+        'reduceInCart'
+    ])
+  },
+  computed: {
+    ...mapGetters([
+        'getProduct'
+    ]),
+    product: function () {
+      return this.getProduct(this.id);
     }
   }
 }
