@@ -12,6 +12,9 @@ export default new Vuex.Store({
         setData (state, payload) {
             state.data = state.data.concat(payload);
         },
+        setCart (state, payload) {
+          state.itemsInCart = payload;
+        },
         addItemToCart (state, id) {
             const existItem = state.itemsInCart.find(item => item.id === id)
             if (existItem) {
@@ -45,7 +48,7 @@ export default new Vuex.Store({
     },
     actions: {
         requestData ({ commit }, page) {
-            fetch(`/db/data${page}.json`)
+            fetch(`/products/${page}`)
                 .then(res => {
                     return res.json();
                 })
@@ -56,14 +59,62 @@ export default new Vuex.Store({
                     console.log(error);
                 });
         },
-        addToCart ( { commit }, id) {
+        requestCartData ({ commit }) {
+            fetch(`/cart`)
+                .then(res => {
+                    return res.json();
+                })
+                .then(res => {
+                    commit('setCart', res.cart);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        },
+        addToCart ( { commit, dispatch }, id) {
             commit('addItemToCart', id);
+            dispatch('saveCartToServer');
         },
-        removeFromCart ( { commit }, id) {
+        removeFromCart ( { commit, dispatch }, id) {
             commit('removeItemFromCart', id);
+            dispatch('saveCartToServer');
         },
-        reduceInCart ( { commit }, id) {
+        reduceInCart ( { commit, dispatch }, id) {
             commit('reduceItemCountInCart', id);
+            dispatch('saveCartToServer');
+        },
+        addProductToCatalog ( {}, data) {
+            fetch('/products/', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(res => {
+                    return res.json();
+                })
+                .then(res => {
+                    console.log(res);
+                })
+        },
+        saveCartToServer ( {getters} ) {
+            fetch('/cart', {
+                method: 'POST',
+                body: JSON.stringify(getters.getCartData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(res => {
+                    return res.json();
+                })
+                .then(res => {
+                    console.log('Cart saved', res);
+                })
+                .catch(err => {
+                    console.log('Cart NOT saved' + err);
+                })
         }
     }
 })
